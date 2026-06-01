@@ -1,0 +1,10 @@
+//start index.js server 
+ const express = require('express');
+ const app = express();
+
+ app.get('/', (req, res) => {
+     res.send('Hello World!');
+ });
+ app.listen(5000, () => {
+     console.log('Our project is running on port 5000');
+ });
